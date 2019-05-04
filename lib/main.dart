@@ -1,6 +1,7 @@
 import 'package:cookbook/BasicList.dart';
 import 'package:cookbook/GridList.dart';
 import 'package:cookbook/HorizonytalList.dart';
+import 'package:cookbook/ListWithDifferentItems.dart';
 import 'package:flutter/material.dart';
 import './Hello.dart';
 
@@ -58,6 +59,17 @@ class MyApp extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => GridList()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('List with different items'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ListWithDifferentItems()),
               );
             },
           ),
