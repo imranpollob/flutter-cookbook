@@ -12,7 +12,7 @@ class ListWithDifferentItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello'),
+        title: Text('List With Different Items'),
       ),
       body: ListView.builder(
         itemCount: items.length,

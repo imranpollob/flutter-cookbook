@@ -7,7 +7,7 @@ class FloatingBarAboveList extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            title: Text('Floating App  Bar'),
+            title: Text('Floating App Bar Above List'),
             expandedHeight: 150,
             floating: true,
             flexibleSpace: Center(

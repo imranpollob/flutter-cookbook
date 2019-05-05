@@ -5,7 +5,7 @@ class GridList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Hello'),
+          title: Text('Grid List'),
         ),
         body: GridView.count(
           crossAxisCount: 2,

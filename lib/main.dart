@@ -3,6 +3,7 @@ import 'package:cookbook/FloatingBarAboveList.dart';
 import 'package:cookbook/GridList.dart';
 import 'package:cookbook/HorizonytalList.dart';
 import 'package:cookbook/ListWithDifferentItems.dart';
+import 'package:cookbook/LongList.dart';
 import 'package:flutter/material.dart';
 import './Hello.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           ListTile(
-            leading: Icon(Icons.star),
+            leading: Icon(Icons.ac_unit),
             title: Text('Hello'),
             onTap: () {
               Navigator.push(
@@ -34,7 +35,11 @@ class MyApp extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.star),
+            leading: Icon(Icons.list),
+            title: Text('List'),
+          ),
+          ListTile(
+            leading: Text(''),
             title: Text('Basic List'),
             onTap: () {
               Navigator.push(
@@ -44,7 +49,7 @@ class MyApp extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.star),
+            leading: Text(''),
             title: Text('Horizontal List'),
             onTap: () {
               Navigator.push(
@@ -54,7 +59,7 @@ class MyApp extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.star),
+            leading: Text(''),
             title: Text('Grid List'),
             onTap: () {
               Navigator.push(
@@ -64,8 +69,8 @@ class MyApp extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.star),
-            title: Text('List with different items'),
+            leading: Text(''),
+            title: Text('List With Different Items'),
             onTap: () {
               Navigator.push(
                 context,
@@ -75,12 +80,22 @@ class MyApp extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.star),
-            title: Text('Floating app bar above list'),
+            leading: Text(''),
+            title: Text('Floating App Bar Above List'),
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => FloatingBarAboveList()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Long List'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LongList()),
               );
             },
           ),
