@@ -2,6 +2,7 @@ import 'package:cookbook/BasicList.dart';
 import 'package:cookbook/FloatingBarAboveList.dart';
 import 'package:cookbook/GridList.dart';
 import 'package:cookbook/HorizonytalList.dart';
+import 'package:cookbook/ImageFromInternet.dart';
 import 'package:cookbook/ListWithDifferentItems.dart';
 import 'package:cookbook/LongList.dart';
 import 'package:flutter/material.dart';
@@ -96,6 +97,20 @@ class MyApp extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => LongList()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.image),
+            title: Text('Image'),
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Image Form Internet'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ImageFromInternet()),
               );
             },
           ),
