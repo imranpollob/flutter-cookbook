@@ -1,4 +1,5 @@
 import 'package:cookbook/BasicList.dart';
+import 'package:cookbook/FloatingBarAboveList.dart';
 import 'package:cookbook/GridList.dart';
 import 'package:cookbook/HorizonytalList.dart';
 import 'package:cookbook/ListWithDifferentItems.dart';
@@ -70,6 +71,16 @@ class MyApp extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                     builder: (context) => ListWithDifferentItems()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Floating app bar above list'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FloatingBarAboveList()),
               );
             },
           ),
