@@ -1,12 +1,14 @@
-import 'package:cookbook/BasicList.dart';
-import 'package:cookbook/FloatingBarAboveList.dart';
-import 'package:cookbook/GridList.dart';
-import 'package:cookbook/HorizonytalList.dart';
-import 'package:cookbook/ImageFromInternet.dart';
-import 'package:cookbook/ListWithDifferentItems.dart';
-import 'package:cookbook/LongList.dart';
+import 'package:cookbook/Hello.dart';
+import 'package:cookbook/image/CustomGifLoadingForGifShowing.dart';
+import 'package:cookbook/list/BasicList.dart';
+import 'package:cookbook/list/FloatingBarAboveList.dart';
+import 'package:cookbook/list/GridList.dart';
+import 'package:cookbook/list/HorizonytalList.dart';
+import 'package:cookbook/image/ImageFromInternet.dart';
+import 'package:cookbook/list/ListWithDifferentItems.dart';
+import 'package:cookbook/list/LongList.dart';
+import 'package:cookbook/image/FadeInImageWithPlaceholder.dart';
 import 'package:flutter/material.dart';
-import './Hello.dart';
 
 void main() => runApp(MaterialApp(
       title: 'Cookbook',
@@ -111,6 +113,26 @@ class MyApp extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ImageFromInternet()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Fade In Image With Placeholder'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FadeInImageWithPlaceholder()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Custom Gif Loading For Gif Showing'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CustomGifLoadingForGifShowing()),
               );
             },
           ),
