@@ -1,4 +1,6 @@
 import 'package:cookbook/Hello.dart';
+import 'package:cookbook/design/ScreenDrawer.dart';
+import 'package:cookbook/image/CachedImage.dart';
 import 'package:cookbook/image/CustomGifLoadingForGifShowing.dart';
 import 'package:cookbook/list/BasicList.dart';
 import 'package:cookbook/list/FloatingBarAboveList.dart';
@@ -122,7 +124,8 @@ class MyApp extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => FadeInImageWithPlaceholder()),
+                MaterialPageRoute(
+                    builder: (context) => FadeInImageWithPlaceholder()),
               );
             },
           ),
@@ -132,7 +135,32 @@ class MyApp extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => CustomGifLoadingForGifShowing()),
+                MaterialPageRoute(
+                    builder: (context) => CustomGifLoadingForGifShowing()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Cached Image'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CachedImage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.collections),
+            title: Text('Design'),
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Screen Drawer'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ScreenDrawer()),
               );
             },
           ),
