@@ -1,4 +1,5 @@
 import 'package:cookbook/Hello.dart';
+import 'package:cookbook/design/DisplaySnackBar.dart';
 import 'package:cookbook/design/ScreenDrawer.dart';
 import 'package:cookbook/image/CachedImage.dart';
 import 'package:cookbook/image/CustomGifLoadingForGifShowing.dart';
@@ -161,6 +162,16 @@ class MyApp extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ScreenDrawer()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Snack Bar'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DisplaySnackBar()),
               );
             },
           ),
