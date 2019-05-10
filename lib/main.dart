@@ -1,4 +1,5 @@
 import 'package:cookbook/Hello.dart';
+import 'package:cookbook/design/CustomFonts.dart';
 import 'package:cookbook/design/DisplaySnackBar.dart';
 import 'package:cookbook/design/ScreenDrawer.dart';
 import 'package:cookbook/image/CachedImage.dart';
@@ -172,6 +173,16 @@ class MyApp extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => DisplaySnackBar()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Custom Fonts'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CustomFonts()),
               );
             },
           ),
