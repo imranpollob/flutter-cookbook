@@ -2,6 +2,7 @@ import 'package:cookbook/Hello.dart';
 import 'package:cookbook/design/CustomFonts.dart';
 import 'package:cookbook/design/DisplaySnackBar.dart';
 import 'package:cookbook/design/ScreenDrawer.dart';
+import 'package:cookbook/design/UpdatingUIonOrientation.dart';
 import 'package:cookbook/image/CachedImage.dart';
 import 'package:cookbook/image/CustomGifLoadingForGifShowing.dart';
 import 'package:cookbook/list/BasicList.dart';
@@ -183,6 +184,17 @@ class MyApp extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => CustomFonts()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Updating UI on Orientation'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => UpdatingUIonOrientation()),
               );
             },
           ),
