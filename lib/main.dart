@@ -2,6 +2,7 @@ import 'package:cookbook/Hello.dart';
 import 'package:cookbook/design/CustomFonts.dart';
 import 'package:cookbook/design/DisplaySnackBar.dart';
 import 'package:cookbook/design/ScreenDrawer.dart';
+import 'package:cookbook/design/Tabs.dart';
 import 'package:cookbook/design/UpdatingUIonOrientation.dart';
 import 'package:cookbook/image/CachedImage.dart';
 import 'package:cookbook/image/CustomGifLoadingForGifShowing.dart';
@@ -195,6 +196,17 @@ class MyApp extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                     builder: (context) => UpdatingUIonOrientation()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Tabs'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => Tabs()),
               );
             },
           ),
