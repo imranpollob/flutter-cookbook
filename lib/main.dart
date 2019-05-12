@@ -5,6 +5,7 @@ import 'package:cookbook/design/ScreenDrawer.dart';
 import 'package:cookbook/design/Tabs.dart';
 import 'package:cookbook/design/UpdatingUIonOrientation.dart';
 import 'package:cookbook/gesture/GestureDetectors.dart';
+import 'package:cookbook/gesture/SwipeToDismiss.dart';
 import 'package:cookbook/gesture/TouchRipples.dart';
 import 'package:cookbook/image/CachedImage.dart';
 import 'package:cookbook/image/CustomGifLoadingForGifShowing.dart';
@@ -232,6 +233,16 @@ class MyApp extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => GestureDetectors()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Swipe To Dismiss'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SwipeToDismiss()),
               );
             },
           ),
