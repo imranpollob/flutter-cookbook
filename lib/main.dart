@@ -4,6 +4,8 @@ import 'package:cookbook/design/DisplaySnackBar.dart';
 import 'package:cookbook/design/ScreenDrawer.dart';
 import 'package:cookbook/design/Tabs.dart';
 import 'package:cookbook/design/UpdatingUIonOrientation.dart';
+import 'package:cookbook/gesture/GestureDetectors.dart';
+import 'package:cookbook/gesture/TouchRipples.dart';
 import 'package:cookbook/image/CachedImage.dart';
 import 'package:cookbook/image/CustomGifLoadingForGifShowing.dart';
 import 'package:cookbook/list/BasicList.dart';
@@ -205,8 +207,31 @@ class MyApp extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                    builder: (context) => Tabs()),
+                MaterialPageRoute(builder: (context) => Tabs()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.gesture),
+            title: Text('Gesture'),
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Touch Ripples'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TouchRipples()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Text(''),
+            title: Text('Gesture Detectors'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GestureDetectors()),
               );
             },
           ),
